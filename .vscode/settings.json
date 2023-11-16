@@ -1,0 +1,5 @@
+{
+    "editor.unicodeHighlight.includeComments": "inUntrustedWorkspace",
+    "editor.suggest.shareSuggestSelections": false,
+    "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false
+}
