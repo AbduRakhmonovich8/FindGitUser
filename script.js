@@ -67,7 +67,7 @@ function chiz(data) {
   let avatar = data.avatar_url;
   let text = `
 <main class="icoD">
-  <div class="img"><img src="${avatar}" alt="img" /></div>
+  <div class="img"><img src="${(avatar) ? avatar : "underfined"}" alt="img" /></div>
   <div class="text">
     <div class="name">
       <div>
@@ -77,7 +77,7 @@ function chiz(data) {
       <p class="date">Joined ${joined}</p>
     </div>
     <p class="bio">
-      ${bio}
+      ${(bio) ? bio : "underfined"}
     </p>
     <div class="statistic">
       <div>
@@ -109,7 +109,7 @@ function chiz(data) {
             fill="#4B6A9B"
           />
         </svg>
-        <a href="${locUrl}" target="_blank"> ${location}</a>
+        <a href="${locUrl}" target="_blank"> ${(location) ? location : "underfined"}</a>
       </div>
       <div>
         <svg
@@ -143,7 +143,7 @@ function chiz(data) {
             fill="#4B6A9B"
           />
         </svg>
-        <a href="${twUrl}" target="_blank">${twitter_username}</a>
+        <a href="${twUrl}" target="_blank">${(twitter_username) ? twitter_username : "underfined"}</a>
       </div>
       <div>
         <svg
@@ -173,7 +173,7 @@ function chiz(data) {
 </main>
 <main class="icoR">
   <div class="ico">
-    <div class="img"><img src="${avatar}" alt="img" /></div>
+    <div class="img"><img src="${(avatar) ? avatar : "underfined"}" alt="img" /></div>
     <div class="name">
       <h2>The Octocat</h2>
       <a href="">@${name}</a>
@@ -182,7 +182,7 @@ function chiz(data) {
   </div>
   <div class="text">
     <p class="bio">
-    ${bio}
+    ${(bio) ? bio : "underfined"}
     </p>
     <div class="statistic">
       <div>
@@ -213,7 +213,7 @@ function chiz(data) {
             fill="#4B6A9B"
           />
         </svg>
-        <a href="${locUrl}" target="_blank"> ${location}</a>
+        <a href="${locUrl}" target="_blank"> ${(location) ? location : "underfined"}</a>
       </div>
       <div class="svgS">
         <svg
@@ -247,7 +247,7 @@ function chiz(data) {
             fill="#4B6A9B"
           />
         </svg>
-        <a href="${twUrl}" target="_blank">${twitter_username}</a>
+        <a href="${twUrl}" target="_blank">${(twitter_username) ? twitter_username : "underfined"}</a>
       </div>
       <div>
         <svg
